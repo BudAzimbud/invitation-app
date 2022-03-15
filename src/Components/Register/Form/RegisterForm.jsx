@@ -9,7 +9,7 @@ class RegisterForm extends Component {
   render() {
     return (
       <div className="form">
-        <h3>Masuk ke akun Anda</h3>
+        <h3>Daftar akun baru</h3>
         <form onSubmit={this.props.onSubmit}>
           <Form.Group controlId="formBasicEmail">
             <Field
@@ -34,7 +34,6 @@ class RegisterForm extends Component {
               type="password"
               name="password"
               component={TextField}
-              placeholder="*****************"
               label={"Password"}
             />
           </Form.Group>
@@ -44,7 +43,6 @@ class RegisterForm extends Component {
               type="password"
               name="confirmPassword"
               component={TextField}
-              placeholder="*****************"
               label={"Ulangi Password"}
             />
           </Form.Group>

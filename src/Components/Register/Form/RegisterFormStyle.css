@@ -1,8 +1,9 @@
 .form {
   background-color: white;
-  padding: 40px 15px;
+  padding: 20px 15px;
   border-radius: 10px;
   width: 410px;
+  margin-top: 50px;
 }
 
 .contain-login-google {

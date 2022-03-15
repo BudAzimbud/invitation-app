@@ -5,13 +5,6 @@
   width: 410px;
 }
 
-.contain-login-google {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 20px;
-}
-
 .btn-primary {
   background-color: #8064a2 !important;
   width: 100%;

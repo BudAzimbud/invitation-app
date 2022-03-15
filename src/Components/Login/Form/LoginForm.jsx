@@ -11,16 +11,15 @@ class LoginForm extends Component {
       <div className="form">
         <h3>Masuk ke akun Anda</h3>
         <form onSubmit={this.props.onSubmit}>
-
           <Form.Group controlId="formBasicEmail">
             <Field
               type="email"
               name="username"
               component={TextField}
               label={"Username (Email)"}
+              placeholder={"azim@example.com"}
             />
           </Form.Group>
-
 
           <Form.Group controlId="formBasicEmail">
             <Field
@@ -31,7 +30,6 @@ class LoginForm extends Component {
               label={"Password"}
             />
           </Form.Group>
-
 
           <Button
             variant="primary"
@@ -48,14 +46,17 @@ class LoginForm extends Component {
             )}
           </Button>
         </form>
+        <div className="text-with-google d-flex justify-content-center">
+          <p>Atau dengan</p>
+        </div>
         <div className="contain-login-google">
-          <a href="/login">
+          <a href="#">
             <i>
               <FcGoogle />
             </i>
             Google
           </a>
-          <a href="/login">
+          <a href="#">
             <i>
               <ImFacebook2 />
             </i>
