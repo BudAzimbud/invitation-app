@@ -3,20 +3,20 @@ import React from "react";
 function NavbarLogin() {
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
-        <div class="container">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
+        <div className="container">
+          <a className="navbar-brand" href="/">
             InTiv
           </a>
-          <a class="nav-link text-white" href="/login">
+          <a className="nav-link text-white" href="/login">
             Login
           </a>
-          <a class="btn btn-light" href="/register">
+          <a className="btn btn-light" href="/register">
             Register
           </a>
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -24,34 +24,34 @@ function NavbarLogin() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="mx-auto"></div>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/">
                   Blog
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/">
                   Pricing
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/">
                   Contact
                 </a>
               </li>
