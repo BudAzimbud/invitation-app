@@ -1,6 +1,6 @@
 import React from "react";
 import LoginForm from "../../Login/Form/LoginForm";
-import NavbarLogin from "../../NavbarLogin";
+import NavbarLogin from "../../Navbar/NavbarLogin";
 import "./LoginPageStyle.css";
 
 function LoginPage() {
