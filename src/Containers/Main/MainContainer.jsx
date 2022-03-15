@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar">
-        <h4 style={{textDecoration:'underline'}}>InTiv</h4>
+        <h4 style={{color:'grey'}}>InTiv</h4>
         <ul>
           <li>
             <OverlayTrigger
@@ -47,7 +47,7 @@ function SideBar() {
                 className="text-secondary"
                 style={{ fontSize: "12px", paddingTop: "0px" }}
               >
-                new Member
+                Gratis
               </p>
             </div>
           </li>

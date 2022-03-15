@@ -4,6 +4,7 @@
 }
 
 .navbar > ul {
+  margin-top: 6px;
   padding: 5px;
   gap: 10px;
   align-items: center;
