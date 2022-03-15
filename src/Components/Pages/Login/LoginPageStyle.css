@@ -2,16 +2,9 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
     url("../../../Asset/Images/iMac\ -\ 1bglogin-invitation\ \(1\).jpg");
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-form {
-  margin: auto;
-  width: 500px;
-  margin-top: 50px ;
-  background-color: white;
-  padding: 50px;
-  border-radius: 10px;
-}

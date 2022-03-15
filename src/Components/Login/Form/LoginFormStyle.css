@@ -1,0 +1,39 @@
+.form {
+  background-color: white;
+  padding: 40px 15px;
+  border-radius: 10px;
+}
+
+.contain-login-google {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #8064a2 !important;
+  width: 100%;
+  border: 1px solid #8064a2;
+}
+
+.contain-login-google > a {
+  background: rgb(214, 213, 213);
+  text-decoration: none;
+  padding: 7px 12px;
+  width: 50%;
+  border-radius: 10px;
+  color: black;
+  align-items: center;
+}
+
+.contain-login-google > a:hover {
+  background-color: rgb(201, 201, 201);
+  color: black;
+}
+
+.contain-login-google > a i {
+  padding-right: 30px;
+  margin-left: 10px;
+  align-self: center;
+}

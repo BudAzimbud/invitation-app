@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import { Button, Spinner, Form } from "react-bootstrap";
 import { reduxForm, Field } from "redux-form";
 import TextField from "../../../Core/TextField";
+import { FcGoogle } from "react-icons/fc";
+import { ImFacebook2 } from "react-icons/im";
 import "./LoginFormStyle.css";
 class LoginForm extends Component {
   render() {
     return (
-      <div>
+      <div className="form">
         <h3>Masuk ke akun Anda</h3>
         <form onSubmit={this.props.onSubmit}>
           <Form.Group controlId="formBasicEmail">
@@ -44,6 +46,21 @@ class LoginForm extends Component {
             )}
           </Button>
         </form>
+
+        <div className="contain-login-google">
+          <a href="#">
+            <i>
+              <FcGoogle />
+            </i>
+            Google
+          </a>
+          <a href="#">
+            <i>
+              <ImFacebook2 />
+            </i>
+            Facebook
+          </a>
+        </div>
       </div>
     );
   }
@@ -51,7 +68,6 @@ class LoginForm extends Component {
 
 LoginForm = reduxForm({
   form: "login",
-  // validate: TenantValidation,
   enableReinitialize: true,
 })(LoginForm);
 
