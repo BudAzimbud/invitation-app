@@ -4,14 +4,13 @@ import { reduxForm, Field } from "redux-form";
 import TextField from "../../../Core/TextField";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
-import "./LoginFormStyle.css";
-class LoginForm extends Component {
+import "./RegisterFormStyle.css";
+class RegisterForm extends Component {
   render() {
     return (
       <div className="form">
         <h3>Masuk ke akun Anda</h3>
         <form onSubmit={this.props.onSubmit}>
-
           <Form.Group controlId="formBasicEmail">
             <Field
               type="email"
@@ -21,6 +20,14 @@ class LoginForm extends Component {
             />
           </Form.Group>
 
+          <Form.Group controlId="formBasicEmail">
+            <Field
+              type="text"
+              name="fullname"
+              component={TextField}
+              label={"Nama lengkap"}
+            />
+          </Form.Group>
 
           <Form.Group controlId="formBasicEmail">
             <Field
@@ -32,6 +39,15 @@ class LoginForm extends Component {
             />
           </Form.Group>
 
+          <Form.Group controlId="formBasicEmail">
+            <Field
+              type="password"
+              name="confirmPassword"
+              component={TextField}
+              placeholder="*****************"
+              label={"Ulangi Password"}
+            />
+          </Form.Group>
 
           <Button
             variant="primary"
@@ -48,14 +64,15 @@ class LoginForm extends Component {
             )}
           </Button>
         </form>
+
         <div className="contain-login-google">
-          <a href="/login">
+          <a href="#">
             <i>
               <FcGoogle />
             </i>
             Google
           </a>
-          <a href="/login">
+          <a href="#">
             <i>
               <ImFacebook2 />
             </i>
@@ -67,9 +84,9 @@ class LoginForm extends Component {
   }
 }
 
-LoginForm = reduxForm({
+RegisterForm = reduxForm({
   form: "login",
   enableReinitialize: true,
-})(LoginForm);
+})(RegisterForm);
 
-export default LoginForm;
+export default RegisterForm;
