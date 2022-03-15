@@ -26,7 +26,7 @@ const TextField = ({
       />
       {touched &&
         ((error && (
-          <p className="mb-0" style={{ color: "red" }}>
+          <p className="mb-0" style={{ color: "red", fontSize: "12px" }}>
             {error}
           </p>
         )) ||

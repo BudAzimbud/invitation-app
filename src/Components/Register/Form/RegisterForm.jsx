@@ -5,6 +5,7 @@ import TextField from "../../../Core/TextField";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import "./RegisterFormStyle.css";
+
 class RegisterForm extends Component {
   render() {
     return (
@@ -86,6 +87,20 @@ class RegisterForm extends Component {
 
 RegisterForm = reduxForm({
   form: "login",
+  validate: (values) => {
+    const errors = {};
+    const valuePassword = values.password ? values.password : "";
+
+    if (valuePassword.length < 8) {
+      errors.password = "Minimal Panjang Password 8 Karakter";
+    }
+
+    if (values.confirmPassword !== values.password) {
+      errors.confirmPassword = "Password tidak sesuai";
+    }
+
+    return errors;
+  },
   enableReinitialize: true,
 })(RegisterForm);
 
