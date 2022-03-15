@@ -60,11 +60,13 @@ class RegisterForm extends Component {
                 <span className="visually-hidden">Masuk</span>
               </Spinner>
             ) : (
-              <span>Masuk</span>
+              <span>Daftar</span>
             )}
           </Button>
         </form>
-
+        <div className="text-with-google d-flex justify-content-center">
+          <p>Atau dengan</p>
+        </div>
         <div className="contain-login-google">
           <a href="#">
             <i>
