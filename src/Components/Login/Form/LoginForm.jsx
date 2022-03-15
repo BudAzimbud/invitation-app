@@ -16,8 +16,8 @@ class LoginForm extends Component {
               type="email"
               name="username"
               component={TextField}
-              placeholder="Email"
-              label={"Username"}
+              placeholder="azim@example.com"
+              label={"Username (Email)"}
             />
           </Form.Group>
 
@@ -26,7 +26,7 @@ class LoginForm extends Component {
               type="password"
               name="password"
               component={TextField}
-              placeholder="Password"
+              placeholder="*****************"
               label={"Password"}
             />
           </Form.Group>
