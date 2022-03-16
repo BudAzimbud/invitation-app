@@ -9,6 +9,12 @@ function PartyPage() {
         <button className="btn-party">
           <GrAdd />
         </button>
+        <a
+          type="button"
+          class="btn-text"
+        >
+          Undang Teman
+        </a>
       </div>
     </div>
   );

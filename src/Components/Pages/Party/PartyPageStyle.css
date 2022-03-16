@@ -1,23 +1,39 @@
 .wrapper-party {
-    width: 80%;
-
+  width: 80%;
 }
 
-.container-party{
-    background: url('../../../Asset/Images/hero-party.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-party {
+  background: url("../../../Asset/Images/hero-party.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-party{
-    border: none;
-    padding: 10px 20px;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px 0px rgba(1, 1, 1, 0.3);
+.btn-party {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(1, 1, 1, 0.3);
 }
 
+.btn-party:hover + .btn-text {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-text {
+  display: none;
+  text-decoration: none;
+  padding: 7px;
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
