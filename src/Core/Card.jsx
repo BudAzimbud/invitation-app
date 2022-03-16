@@ -8,7 +8,7 @@ function CardCustom(props) {
         <Card.Img variant="top" src={props.image} />
         <Card.Body>
           <p style={{fontWeight:'bold'}}>{props.title}</p>
-          <Button variant="primary">Pilih</Button>
+          {props.button}
         </Card.Body>
       </Card>
     </div>

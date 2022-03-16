@@ -1,30 +1,36 @@
 import React, { useState } from "react";
 import { GrAdd } from "react-icons/gr";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import "./PartyPageStyle.css";
 import CardCustom from "../../../Core/Card";
 import WeddingImage from "../../../Asset/Images/wedding-card.jpg";
 import BirthdayImage from "../../../Asset/Images/birthday.jpg";
 import EventImage from "../../../Asset/Images/event.jpg";
 import OtherImage from "../../../Asset/Images/other.jpg";
+import { Link } from "react-router-dom";
 
 function PartyPage() {
   const [kindParty] = useState([
     {
       title: "Pernikahan",
       image: WeddingImage,
+      button: <Link to={"/party/new"}><Button>Mulai</Button></Link>
     },
     {
       title: "Ulang Tahun",
       image: BirthdayImage,
+      button: <Link to={"/party/new"}><Button>Mulai</Button></Link>
     },
     {
       title: "Event",
       image: EventImage,
+      button: <Link to={"/party/new"}><Button>Mulai</Button></Link>
     },
     {
       title: "Lainnya",
       image: OtherImage,
+      button: <Link to={"/party/new"}><Button>Mulai</Button></Link>
+
     },
   ]);
 
@@ -46,7 +52,7 @@ function PartyPage() {
           {kindParty.map((party) => {
             return (
               <Col>
-                <CardCustom title={party.title} image={party.image} />
+                <CardCustom {...party} />
               </Col>
             );
           })}

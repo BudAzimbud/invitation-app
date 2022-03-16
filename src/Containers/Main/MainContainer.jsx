@@ -10,7 +10,7 @@ class MainContainer extends Component {
         <Navbar />
         <div className="container-children">
           <SideBar />
-          <div style={{width:'80%'}}>{this.props.element}</div>
+          <div className="contain">{this.props.element}</div>
         </div>
       </div>
     );

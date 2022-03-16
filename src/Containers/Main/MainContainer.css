@@ -2,5 +2,12 @@
   display: flex;
 }
 
+.contain {
+  width: 80%;
+}
 
-/* sidebar */
+@media only screen and (max-width: 850px) {
+  .contain {
+    width: 100%;
+  }
+}

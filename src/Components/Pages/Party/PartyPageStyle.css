@@ -50,8 +50,4 @@
     padding: 20px;
 }
 
-@media only screen and (max-width: 850px) {
-  .wrapper-party {
-    width: 100%;
-  }
-}
+
