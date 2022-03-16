@@ -4,8 +4,7 @@
 }
 
 .navbar > ul {
-  margin-top: 6px;
-  padding: 5px;
+  margin-top: 5px;
   gap: 10px;
   align-items: center;
   display: flex;
@@ -20,7 +19,10 @@
 .btn-invitation {
   background-color: rgb(76, 76, 236);
   border: none;
-  padding: 7px;
+  padding: 6px;
   color: white;
   border-radius: 20px;
 }
+
+
+  

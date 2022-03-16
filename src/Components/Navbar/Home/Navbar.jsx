@@ -1,6 +1,6 @@
 import React from "react";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
+import { GrNotification } from "react-icons/gr";
 import "./NavbarStyle.css";
 
 function Navbar() {
@@ -10,21 +10,17 @@ function Navbar() {
         <h4 style={{ color: "grey" }}>InTiv</h4>
         <ul>
           <li>
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 250, hide: 400 }}
-              overlay={<Tooltip id="button-tooltip">Help</Tooltip>}
-            >
-              <FiHelpCircle />
-            </OverlayTrigger>
+            <FiHelpCircle />
           </li>
           <li>
             <FiSettings />
           </li>
           <li>
+            <GrNotification />
+          </li>
+          <li>
             <button className="btn-invitation">Buat Undangan</button>
           </li>
-          <li>avatar</li>
         </ul>
       </nav>
     </div>
