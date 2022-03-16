@@ -3,7 +3,6 @@ import Navbar from "../../Components/Navbar/Home/Navbar";
 import SideBar from "../../Components/Navbar/Home/SideBar";
 import "./MainContainer.css";
 
-
 class MainContainer extends Component {
   render() {
     return (
@@ -11,7 +10,7 @@ class MainContainer extends Component {
         <Navbar />
         <div className="container-children">
           <SideBar />
-          {this.props.element}
+          <div style={{width:'80%'}}>{this.props.element}</div>
         </div>
       </div>
     );
