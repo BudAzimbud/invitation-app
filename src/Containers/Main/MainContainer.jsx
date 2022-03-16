@@ -65,7 +65,7 @@ function SideBar() {
               <i>
                 <FiMail />
               </i>
-              Undangan Anda
+              Undangan
             </a>
           </li>
           <li>
@@ -87,8 +87,11 @@ class MainContainer extends Component {
     return (
       <div>
         <Navbar />
-        <SideBar />
-        {this.props.children}
+
+        <div className="container-children">
+          <SideBar/>
+          {this.props.element}
+        </div>
       </div>
     );
   }

@@ -1,3 +1,7 @@
+.container-children{
+  display: flex;
+}
+
 .navbar {
   padding: 0 10%;
   box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.2);
