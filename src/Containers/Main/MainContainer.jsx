@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { OverlayTrigger, Tooltip, Button } from "react-bootstrap";
-import { FiSettings, FiHelpCircle } from "react-icons/fi";
+import { FiSettings, FiHelpCircle, FiMail, FiTrash } from "react-icons/fi";
+import { GiPartyHat } from "react-icons/gi";
 import "./MainContainer.css";
 function Navbar() {
   return (
     <div>
       <nav className="navbar">
-        <h4 style={{color:'grey'}}>InTiv</h4>
+        <h4 style={{ color: "grey" }}>InTiv</h4>
         <ul>
           <li>
             <OverlayTrigger
@@ -51,9 +52,30 @@ function SideBar() {
               </p>
             </div>
           </li>
-          <li>Acara Anda</li>
-          <li>Undangan Anda</li>
-          <li>Sampah</li>
+          <li>
+            <a>
+              <i>
+                <GiPartyHat />
+              </i>
+              Acara Anda
+            </a>
+          </li>
+          <li>
+            <a>
+              <i>
+                <FiMail />
+              </i>
+              Undangan Anda
+            </a>
+          </li>
+          <li>
+            <a>
+              <i>
+                <FiTrash />
+              </i>
+              Sampah
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -41,9 +41,19 @@
   padding: 10px;
 }
 
+.side-bar > div > ul > li a {
+  align-items: center;
+}
+
+.side-bar > div > ul > li a i {
+  padding-right: 20px;
+}
+
 .side-bar > div > ul  li:hover {
   cursor: pointer;
 }
+
+
 
 .avatar > ul li {
   list-style: none;
