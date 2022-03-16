@@ -1,6 +1,8 @@
 import { Row, Col, Form } from "react-bootstrap";
 
-const adaptFileEventToValue = (delegate) => (e) => delegate(e.target.files[0]);
+const adaptFileEventToValue = (delegate) => (e) => {
+  delegate(e.target.files[0]);
+};
 
 const FileInput = ({
   type,

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button, Spinner, Form, Row, Col } from "react-bootstrap";
 import { reduxForm, Field } from "redux-form";
 import FileInput from "../../../../Core/Input/FileInput";
-import renderSelect from "../../../../Core/Input/SelectField";
+import SelectField from "../../../../Core/Input/SelectField";
 import TextField from "../../../../Core/Input/TextField";
 
 class PartyForm extends Component {
@@ -47,9 +47,9 @@ class PartyForm extends Component {
                 <Field
                   type="text"
                   name="kindParty"
-                  component={renderSelect}
+                  component={SelectField}
                   label={"Pilih Acara"}
-                  options={[]}
+                  options={["Ulang tahun" , "Pernikahan"]}
                 />
               </Form.Group>
             </Col>
@@ -59,7 +59,7 @@ class PartyForm extends Component {
                   type="file"
                   name="background"
                   component={FileInput}
-                  label={"Deskripsi Acara"}
+                  label={"Pilih Gambar"}
                 />
               </Form.Group>
             </Col>

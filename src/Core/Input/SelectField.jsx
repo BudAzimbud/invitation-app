@@ -1,6 +1,6 @@
 import { Row, Col, Form } from "react-bootstrap";
 
- const renderSelect = ({
+ const SelectField = ({
   input,
   label,
   options,
@@ -37,4 +37,4 @@ import { Row, Col, Form } from "react-bootstrap";
   </Row>
 );
 
-export default  renderSelect
+export default  SelectField

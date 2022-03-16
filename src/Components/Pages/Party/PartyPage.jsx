@@ -40,7 +40,7 @@ function PartyPage() {
         <button className="btn-party">
           <GrAdd />
         </button>
-        <a type="button" class="btn-text">
+        <a type="button" class="btn-text text-white">
           Undang Teman
         </a>
       </div>

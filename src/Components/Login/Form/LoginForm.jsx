@@ -32,7 +32,9 @@ class LoginForm extends Component {
             />
           </Form.Group>
 
-          <Link to="/" style={{textDecoration:'none',fontSize:'15px'}}>Lupa Password</Link>
+          <Link to="/" style={{ textDecoration: "none", fontSize: "15px" }}>
+            Lupa Password
+          </Link>
 
           <Button
             variant="primary"
@@ -73,7 +75,6 @@ class LoginForm extends Component {
 
 LoginForm = reduxForm({
   form: "login",
-  enableReinitialize: true,
 })(LoginForm);
 
 export default LoginForm;
