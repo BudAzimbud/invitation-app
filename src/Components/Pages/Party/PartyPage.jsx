@@ -5,6 +5,8 @@ import "./PartyPageStyle.css";
 import CardCustom from "../../../Core/Card";
 import WeddingImage from "../../../Asset/Images/wedding-card.jpg";
 import BirthdayImage from "../../../Asset/Images/birthday.jpg";
+import EventImage from "../../../Asset/Images/event.jpg";
+import OtherImage from "../../../Asset/Images/other.jpg";
 
 function PartyPage() {
   const [kindParty] = useState([
@@ -13,15 +15,17 @@ function PartyPage() {
       image: WeddingImage,
     },
     {
-        title: "Ulang Tahun",
-        image: BirthdayImage,
-      },  {
-        title: "Event",
-        image: WeddingImage,
-      },  {
-        title: "Lainnya",
-        image: WeddingImage,
-      },
+      title: "Ulang Tahun",
+      image: BirthdayImage,
+    },
+    {
+      title: "Event",
+      image: EventImage,
+    },
+    {
+      title: "Lainnya",
+      image: OtherImage,
+    },
   ]);
 
   return (

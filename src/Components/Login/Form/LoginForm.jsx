@@ -5,6 +5,7 @@ import TextField from "../../../Core/TextField";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import "./LoginFormStyle.css";
+import { Link } from "react-router-dom";
 class LoginForm extends Component {
   render() {
     return (
@@ -30,6 +31,8 @@ class LoginForm extends Component {
               label={"Password"}
             />
           </Form.Group>
+
+          <Link to="/" style={{textDecoration:'none',fontSize:'15px'}}>Lupa Password</Link>
 
           <Button
             variant="primary"
