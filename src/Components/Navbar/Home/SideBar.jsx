@@ -1,9 +1,40 @@
 import React from "react";
-import { FiMail, FiTrash } from "react-icons/fi";
-import { GiPartyHat } from "react-icons/gi";
+
+import { Link } from "react-router-dom";
+import routes from '../../../Route'
 import "./SideBarStyle.css";
 
+
+const styleVisited = {
+  color: "blueviolet",
+ 
+};
+
+const styleLinkVisited = {
+  color: 'blueviolet'
+}
+
+
 function SideBar() {
+
+
+  const visit = (path) => {
+    if (window.location.pathname === path) {
+      return styleVisited;
+    }
+    return null;
+  };
+
+  const linkVisited = (path)=>{
+    if (window.location.pathname === path) {
+      return styleLinkVisited;
+    }
+    return null;
+  }
+
+
+ 
+
   return (
     <div className="side-bar">
       <div>
@@ -24,30 +55,21 @@ function SideBar() {
               </p>
             </div>
           </li>
-          <li>
-            <a>
-              <i>
-                <GiPartyHat />
-              </i>
-              Acara Anda
-            </a>
-          </li>
-          <li>
-            <a>
-              <i>
-                <FiMail />
-              </i>
-              Undangan
-            </a>
-          </li>
-          <li>
-            <a>
-              <i>
-                <FiTrash />
-              </i>
-              Sampah
-            </a>
-          </li>
+          {
+            routes.map((route)=>{
+              return (
+                <li style={visit(route.link)}>
+                <Link to={route.link} className="link" style={linkVisited(route.link)} >
+                  <i>
+                    {route.icon}
+                  </i>
+                  {route.title}
+                </Link>
+              </li>
+              )
+            })
+          }
+        
         </ul>
       </div>
     </div>

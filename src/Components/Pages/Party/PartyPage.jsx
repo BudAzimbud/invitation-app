@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GrAdd } from "react-icons/gr";
 import { Row, Col, Button } from "react-bootstrap";
 import "./PartyPageStyle.css";
-import CardCustom from "../../../Core/Card";
+import CardCustom from "../../../Core/List/Card";
 import WeddingImage from "../../../Asset/Images/wedding-card.jpg";
 import BirthdayImage from "../../../Asset/Images/birthday.jpg";
 import EventImage from "../../../Asset/Images/event.jpg";

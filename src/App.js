@@ -6,11 +6,11 @@ import RegisterPage from './Components/Pages/Register/RegisterPage';
 import MainContainer from './Containers/Main/MainContainer';
 import PartyPage from './Components/Pages/Party/PartyPage';
 import PartyCreateNew from './Components/Pages/Party/New/PartyCreateNew';
+import Table from './Core/List/Table';
 
 
 function App() {
 
-  console.log(window.location.pathname)
 
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
+          <Route path='/tabletest' element={<Table />} />
           <Route path='/' element={<MainContainer element={< PartyPage />} />} />
           <Route path='/party/new' element={<MainContainer element={< PartyCreateNew />} />} />
         </Routes>
