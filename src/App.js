@@ -20,6 +20,8 @@ function App() {
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/tabletest' element={<Table />} />
           <Route path='/' element={<MainContainer element={< PartyPage />} />} />
+          <Route path='/undangan' element={<MainContainer />} />
+          <Route path='/sampah' element={<MainContainer />} />
           <Route path='/party/new' element={<MainContainer element={< PartyCreateNew />} />} />
         </Routes>
       </BrowserRouter>
