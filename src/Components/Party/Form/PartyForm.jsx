@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Button, Spinner, Form, Row, Col } from "react-bootstrap";
 import { reduxForm, Field } from "redux-form";
-import FileInput from "../../../../Core/Input/FileInput";
-import SelectField from "../../../../Core/Input/SelectField";
-import TextField from "../../../../Core/Input/TextField";
+import FileInput from "../../../Core/Input/FileInput";
+import SelectField from "../../../Core/Input/SelectField";
+import TextField from "../../../Core/Input/TextField";
 
 class PartyForm extends Component {
   render() {

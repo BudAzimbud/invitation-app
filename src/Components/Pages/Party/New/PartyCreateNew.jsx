@@ -1,5 +1,5 @@
 import React from "react";
-import PartyForm from "../../../Party/Form/Create/PartyForm";
+import PartyForm from "../../../Party/Form/PartyForm";
 import "./PartyCreateNew.css";
 function PartyCreateNew() {
   return (

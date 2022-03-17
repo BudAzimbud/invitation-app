@@ -11,6 +11,7 @@ class LoginForm extends Component {
     return (
       <div className="form">
         <h3>Masuk ke akun Anda</h3>
+
         <form onSubmit={this.props.onSubmit}>
           <Form.Group controlId="formBasicEmail">
             <Field
@@ -51,6 +52,7 @@ class LoginForm extends Component {
             )}
           </Button>
         </form>
+
         <div className="text-with-google d-flex justify-content-center">
           <p>Atau dengan</p>
         </div>
@@ -75,6 +77,7 @@ class LoginForm extends Component {
 
 LoginForm = reduxForm({
   form: "login",
+  enableReinitialize: true,
 })(LoginForm);
 
 export default LoginForm;
