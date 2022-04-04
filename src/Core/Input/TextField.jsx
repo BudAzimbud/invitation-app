@@ -23,6 +23,7 @@ const TextField = ({
         placeholder={placeholder}
         disabled={disabled}
         readOnly={readOnly}
+        className={error && "border border-danger"}
       />
       {touched &&
         ((error && (

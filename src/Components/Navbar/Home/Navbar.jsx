@@ -1,6 +1,7 @@
 import React from "react";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
 import { GrNotification } from "react-icons/gr";
+import { Link } from "react-router-dom";
 import "./NavbarStyle.css";
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
             <GrNotification />
           </li>
           <li>
-            <button className="btn-invitation">Buat Undangan</button>
+            <button className="btn-invitation"><Link to="/party/new">Buat undangan</Link></button>
           </li>
         </ul>
       </nav>

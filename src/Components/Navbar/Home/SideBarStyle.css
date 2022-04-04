@@ -13,16 +13,17 @@
   padding: 10px;
 }
 
-.side-bar > div > ul > li:hover {
-  color: blueviolet;
-  border-bottom: 4px solid blueviolet;
-  text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, -2px -2px white;
-}
+
 
 .side-bar > div > ul > li .link {
   color: black;
   text-decoration: none;
   align-items: center;
+}
+
+.side-bar > div > ul > li .link:hover {
+  color: blueviolet;
+
 }
 
 .side-bar > div > ul > li .link i {

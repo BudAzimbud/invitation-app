@@ -7,10 +7,13 @@ import { ImFacebook2 } from "react-icons/im";
 import "./LoginFormStyle.css";
 import { Link } from "react-router-dom";
 class LoginForm extends Component {
+
+  titleForm = "Masuk ke akun Ente"
+
   render() {
     return (
       <div className="form">
-        <h3>Masuk ke akun Anda</h3>
+        <h3>{this.titleForm}</h3>
 
         <form onSubmit={this.props.onSubmit}>
           <Form.Group controlId="formBasicEmail">
@@ -57,13 +60,13 @@ class LoginForm extends Component {
           <p>Atau dengan</p>
         </div>
         <div className="contain-login-google">
-          <a href="#">
+          <a href="/">
             <i>
               <FcGoogle />
             </i>
             Google
           </a>
-          <a href="#">
+          <a href="/">
             <i>
               <ImFacebook2 />
             </i>

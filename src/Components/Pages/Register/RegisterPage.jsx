@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarLogin from "../../Navbar/NavbarLogin";
 import RegisterForm from "../../Register/Form/RegisterForm";
 
 function RegisterPage() {
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (data) => {
-    alert(data);
+    data.preventDefault();
   };
   return (
     <div className="wrap">

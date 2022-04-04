@@ -6,7 +6,7 @@ function NavbarLogin() {
     <div>
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark ">
         <div className="container">
-          <a className="navbar-brand" href="">
+          <a className="navbar-brand" href="/">
             InTiv
           </a>
           <Link className="nav-link text-white" to="/login">
@@ -32,27 +32,27 @@ function NavbarLogin() {
             <div className="mx-auto"></div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link text-white" href="">
+                <a className="nav-link text-white" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="">
+                <a className="nav-link text-white" href="/">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="">
+                <a className="nav-link text-white" href="/">
                   Blog
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="">
+                <a className="nav-link text-white" href="/">
                   Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="">
+                <a className="nav-link text-white" href="/">
                   Contact
                 </a>
               </li>

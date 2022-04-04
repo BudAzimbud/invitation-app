@@ -9,8 +9,10 @@ import PartyCreateNew from './Components/Pages/Party/New/PartyCreateNew';
 import Table from './Core/List/Table';
 
 
-function App() {
 
+
+
+function App() {
 
   return (
     <div className="App">

@@ -67,13 +67,13 @@ class RegisterForm extends Component {
           <p>Atau dengan</p>
         </div>
         <div className="contain-login-google">
-          <a href="#">
+          <a href="/">
             <i>
               <FcGoogle />
             </i>
             Google
           </a>
-          <a href="#">
+          <a href="/">
             <i>
               <ImFacebook2 />
             </i>

@@ -16,6 +16,11 @@
   cursor: pointer;
 }
 
+.navbar > ul li  a {
+  color: white;
+  text-decoration: none;
+}
+
 .btn-invitation {
   background-color: rgb(76, 76, 236);
   border: none;
